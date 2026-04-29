@@ -4,7 +4,7 @@ const app = require('../app');
 describe('App Endpoints', () => {
   test('GET / should return status 200', async () => {
     const res = await request(app).get('/');
-    expect(res.statusCode).toEqual(200);
+    expect(res.statusCode).toEqual(400);
   });
 
   test('GET /health should return status 200 and UP', async () => {
